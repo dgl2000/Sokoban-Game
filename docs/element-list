@@ -1,0 +1,10 @@
+com.ae2dms.sokobanfx.controller
+com.ae2dms.sokobanfx.event
+com.ae2dms.sokobanfx.main
+com.ae2dms.sokobanfx.manager
+com.ae2dms.sokobanfx.model
+com.ae2dms.sokobanfx.service
+com.ae2dms.sokobanfx.util
+com.ae2dms.sokobanfx.view
+ModelTest
+ServiceTest
