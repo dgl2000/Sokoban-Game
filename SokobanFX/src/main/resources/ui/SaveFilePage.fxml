@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="450.0" prefWidth="400.0"
+            style="-fx-background-color: RGB(250,250,248);" xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.ae2dms.sokobanfx.controller.SavaFilePageController">
+    <Button layoutX="150.0" layoutY="261.0" mnemonicParsing="false" onAction="#handlePosition1" prefHeight="33.0"
+            prefWidth="103.0" style="-fx-background-color: #358EB4;" text="Position 1" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="14.0"/>
+        </font>
+        <effect>
+            <DropShadow blurType="GAUSSIAN" color="#0a314f" height="13.16" radius="6.7425" width="15.81"/>
+        </effect>
+    </Button>
+    <Button layoutX="150.0" layoutY="321.0" mnemonicParsing="false" onAction="#handlePosition2" prefHeight="33.0"
+            prefWidth="103.0" style="-fx-background-color: #358EB4;" text="Position 2" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="14.0"/>
+        </font>
+        <effect>
+            <DropShadow blurType="GAUSSIAN" color="#0a314f" height="13.16" radius="6.7425" width="15.81"/>
+        </effect>
+    </Button>
+    <Button layoutX="150.0" layoutY="380.0" mnemonicParsing="false" onAction="#handlePosition3" prefHeight="33.0"
+            prefWidth="103.0" style="-fx-background-color: #358EB4;" text="Position 3" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="14.0"/>
+        </font>
+        <effect>
+            <DropShadow blurType="GAUSSIAN" color="#0a314f" height="13.16" radius="6.7425" width="15.81"/>
+        </effect>
+    </Button>
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="102.0" layoutY="42.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../StartPage.jpg"/>
+    </ImageView>
+    <Label alignment="CENTER" layoutX="52.0" layoutY="175.0" prefHeight="25.0" prefWidth="295.0"
+           style="-fx-background-color: #8fbc84;" text="Save Progress" textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="14.0"/>
+        </font>
+        <effect>
+            <DropShadow blurType="GAUSSIAN" color="#0f642f" height="10.5" radius="6.077500000000001" width="15.81"/>
+        </effect>
+    </Label>
+    <Label layoutX="65.0" layoutY="225.0" text="* Choose a position to save the current progress.">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Label>
+</AnchorPane>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="450.0" prefWidth="400.0"
+            style="-fx-background-color: RGB(250,250,248);" xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.ae2dms.sokobanfx.controller.HighScoreController">
+    <ImageView fitHeight="103.0" fitWidth="167.0" layoutX="123.0" layoutY="14.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../StartPage.jpg"/>
+    </ImageView>
+    <Label alignment="CENTER" layoutX="50.0" layoutY="131.0" prefHeight="39.0" prefWidth="304.0"
+           style="-fx-background-color: #8fbc84;" text="HIGH SCORE LIST" textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="15.0"/>
+        </font>
+        <effect>
+            <DropShadow blurType="GAUSSIAN" color="#0f642f" height="10.5" radius="6.077500000000001" width="15.81"/>
+        </effect>
+    </Label>
+    <Label alignment="TOP_CENTER" layoutX="50.0" layoutY="187.0" prefHeight="11.0" prefWidth="31.0"
+           style="-fx-background-color: #358EB4;" text="🥇" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Label>
+    <Label alignment="TOP_CENTER" layoutX="50.0" layoutY="212.0" prefHeight="11.0" prefWidth="31.0"
+           style="-fx-background-color: #358EB4;" text="🥈" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Label>
+    <Label alignment="TOP_CENTER" layoutX="50.0" layoutY="237.0" prefHeight="11.0" prefWidth="31.0"
+           style="-fx-background-color: #358EB4;" text="🥉" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Label>
+    <Label alignment="TOP_CENTER" layoutX="50.0" layoutY="262.0" prefHeight="11.0" prefWidth="31.0"
+           style="-fx-background-color: #358EB4;" text="4" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Label>
+    <Label alignment="TOP_CENTER" layoutX="50.0" layoutY="287.0" prefHeight="11.0" prefWidth="31.0"
+           style="-fx-background-color: #358EB4;" text="5" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Label>
+    <Label alignment="TOP_CENTER" layoutX="50.0" layoutY="312.0" prefHeight="11.0" prefWidth="31.0"
+           style="-fx-background-color: #358EB4;" text="6" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Label>
+    <Label alignment="TOP_CENTER" layoutX="50.0" layoutY="337.0" prefHeight="11.0" prefWidth="31.0"
+           style="-fx-background-color: #358EB4;" text="7" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Label>
+    <Label alignment="TOP_CENTER" layoutX="50.0" layoutY="362.0" prefHeight="11.0" prefWidth="31.0"
+           style="-fx-background-color: #358EB4;" text="8" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Label>
+    <Text fx:id="firstText" layoutX="99.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          wrappingWidth="278">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Text>
+    <Text fx:id="secondText" layoutX="99.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          wrappingWidth="278">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Text>
+    <Text fx:id="thirdText" layoutX="99.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          wrappingWidth="278">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Text>
+    <Text fx:id="forthText" layoutX="99.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          wrappingWidth="278">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Text>
+    <Text fx:id="fifthText" layoutX="99.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          wrappingWidth="278">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Text>
+    <Text fx:id="sixthText" layoutX="99.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          wrappingWidth="278">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Text>
+    <Text fx:id="seventhText" layoutX="99.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          wrappingWidth="278">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Text>
+    <Text fx:id="eighthText" layoutX="99.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          wrappingWidth="278">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Text>
+    <Button layoutX="91.0" layoutY="394.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="33.0"
+            prefWidth="85.0" style="-fx-background-color: #8fbc84;" text="B A C K" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="14.0"/>
+        </font>
+    </Button>
+    <Button layoutX="227.0" layoutY="394.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="33.0"
+            prefWidth="85.0" style="-fx-background-color: #8fbc84;" text="E X I T" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="14.0"/>
+        </font>
+    </Button>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="600.0" prefWidth="600.0"
+            style="-fx-background-color: RGB(250,250,248);" xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.ae2dms.sokobanfx.controller.MorePageController">
+    <ImageView fitHeight="243.0" fitWidth="380.0" layoutX="117.0" layoutY="39.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../StartPage.jpg"/>
+    </ImageView>
+    <Button layoutX="218.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleRuleButton"
+            prefHeight="40.0" prefWidth="165.0" style="-fx-background-color: #8fbc84;" text="R U L E S"
+            textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="17.0"/>
+        </font>
+    </Button>
+    <Button layoutX="218.0" layoutY="420.0" mnemonicParsing="false"
+            onAction="#handleSupportButton" prefHeight="40.0" prefWidth="165.0"
+            style="-fx-background-color: #8fbc84;" text="S U P P O R T" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="17.0"/>
+        </font>
+    </Button>
+    <Button layoutX="218.0" layoutY="480.0" mnemonicParsing="false" onAction="#handleBackButton"
+            prefHeight="40.0" prefWidth="165.0" style="-fx-background-color: #8fbc84;" text="B A C K"
+            textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="17.0"/>
+        </font>
+    </Button>
+    <Button layoutX="218.0" layoutY="540.0" mnemonicParsing="false" onAction="#handleExitButton"
+            prefHeight="40.0" prefWidth="165.0" style="-fx-background-color: #8fbc84;" text="E X I T"
+            textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="17.0"/>
+        </font>
+    </Button>
+    <Button layoutX="218.0" layoutY="360.0" mnemonicParsing="false"
+            onAction="#handleGuidanceButton" prefHeight="40.0" prefWidth="165.0"
+            style="-fx-background-color: #8fbc84;" text="G U I D A N C E" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="17.0"/>
+        </font>
+    </Button>
+    <ImageView fitHeight="171.0" fitWidth="184.0" layoutX="14.0" layoutY="351.0" opacity="0.68" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../illustration.jpg"/>
+    </ImageView>
+    <ImageView fitHeight="96.0" fitWidth="72.0" layoutX="451.0" layoutY="358.0" opacity="0.68" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../illustration2.jpg"/>
+    </ImageView>
+    <ImageView fitHeight="86.0" fitWidth="119.0" layoutX="423.0" layoutY="434.0" opacity="0.68" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../illustration3.png"/>
+    </ImageView>
+</AnchorPane>

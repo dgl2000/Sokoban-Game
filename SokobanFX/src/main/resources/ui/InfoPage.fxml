@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<DialogPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0"
+            prefWidth="400.0" style="-fx-background-color: RGB(250,250,248);" xmlns="http://javafx.com/javafx/11.0.1">
+    <header>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0">
+            <ImageView fitHeight="129.0" fitWidth="183.0" layoutX="109.0" layoutY="14.0" pickOnBounds="true"
+                       preserveRatio="true">
+
+                <Image url="@../StartPage.jpg"/>
+
+            </ImageView>
+            <Label alignment="CENTER" layoutX="51.0" layoutY="154.0" prefHeight="21.0" prefWidth="298.0"
+                   style="-fx-background-color: #8fbc84;" text="I N F O" textAlignment="CENTER" textFill="WHITE">
+                <font>
+                    <Font name="Arial Bold" size="12.0"/>
+                </font>
+                <effect>
+                    <DropShadow blurType="GAUSSIAN" color="#0f642f" height="10.5" radius="6.077500000000001"
+                                width="15.81"/>
+                </effect>
+            </Label>
+
+        </AnchorPane>
+    </header>
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0">
+
+            <ImageView fitHeight="245.0" fitWidth="328.0" layoutX="36.0" layoutY="-15.0">
+                <Image url="@../info.png"/>
+            </ImageView>
+        </AnchorPane>
+    </content>
+</DialogPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="450.0" prefWidth="400.0"
+            style="-fx-background-color: RGB(250,250,248);" xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.ae2dms.sokobanfx.controller.LoadFilePageController">
+    <Button layoutX="150.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleProgress1" prefHeight="33.0"
+            prefWidth="103.0" style="-fx-background-color: #358EB4;" text="Progress 1" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="14.0"/>
+        </font>
+        <effect>
+            <DropShadow blurType="GAUSSIAN" color="#0a314f" height="13.16" radius="6.7425" width="15.81"/>
+        </effect>
+    </Button>
+    <Button layoutX="150.0" layoutY="302.0" mnemonicParsing="false" onAction="#handleProgress2" prefHeight="33.0"
+            prefWidth="103.0" style="-fx-background-color: #358EB4;" text="Progress 2" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="14.0"/>
+        </font>
+        <effect>
+            <DropShadow blurType="GAUSSIAN" color="#0a314f" height="13.16" radius="6.7425" width="15.81"/>
+        </effect>
+    </Button>
+    <Button layoutX="150.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleProgress3" prefHeight="33.0"
+            prefWidth="103.0" style="-fx-background-color: #358EB4;" text="Progress 3" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="14.0"/>
+        </font>
+        <effect>
+            <DropShadow blurType="GAUSSIAN" color="#0a314f" height="13.16" radius="6.7425" width="15.81"/>
+        </effect>
+    </Button>
+
+    <Button layoutX="150.0" layoutY="402.0" mnemonicParsing="false" onAction="#handleAutoSave" prefHeight="33.0"
+            prefWidth="103.0" style="-fx-background-color: #358EB4;" text="Auto Save" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="14.0"/>
+        </font>
+        <effect>
+            <DropShadow blurType="GAUSSIAN" color="#0a314f" height="13.16" radius="6.7425" width="15.81"/>
+        </effect>
+    </Button>
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="102.0" layoutY="42.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../StartPage.jpg"/>
+    </ImageView>
+    <Label alignment="CENTER" layoutX="52.0" layoutY="175.0" prefHeight="25.0" prefWidth="295.0"
+           style="-fx-background-color: #8fbc84;" text="Load History Progress" textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="14.0"/>
+        </font>
+        <effect>
+            <DropShadow blurType="GAUSSIAN" color="#0f642f" height="10.5" radius="6.077500000000001" width="15.81"/>
+        </effect>
+    </Label>
+    <Label layoutX="108.0" layoutY="217.0" text="* Choose a progress to continue.">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Label>
+</AnchorPane>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.*?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity"
+          minHeight="-Infinity"
+          minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.1"
+          fx:controller="com.ae2dms.sokobanfx.controller.PlayPageController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <MenuBar>
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem fx:id="saveGame" mnemonicParsing="false" onAction="#handleSaveGame" text="Save Game">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="F1" control="ANY" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <MenuItem fx:id="loadGame" mnemonicParsing="false" onAction="#handleLoadGame" text="Load Game">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="F2" control="ANY" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <SeparatorMenuItem fx:id="fileSeparator" mnemonicParsing="false"/>
+            <MenuItem mnemonicParsing="false" onAction="#handleBackMain" text="Back">
+                <accelerator>
+                    <KeyCodeCombination alt="DOWN" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" onAction="#handleCloseGame" text="Exit">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Level">
+            <MenuItem mnemonicParsing="false" onAction="#handleUndo" text="Undo">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="Z" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" onAction="#handleToggleMusic" text="Toggle Music">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="F3" control="ANY" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" onAction="#handleToggleDebug" text="Toggle Debug">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="F4" control="ANY" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <SeparatorMenuItem fx:id="levelSeparator" mnemonicParsing="false"/>
+            <MenuItem fx:id="resetLevel" mnemonicParsing="false" onAction="#handleResetLevel"
+                      text="Reset Level">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="R" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+        </Menu>
+        <Menu mnemonicParsing="false" text="About">
+            <MenuItem mnemonicParsing="false" onAction="#handleShowAbout" text="About This Game">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="F5" control="ANY" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Setting">
+            <MenuItem mnemonicParsing="false" onAction="#handleSwitchTheme" text="Switch Theme">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="F6" control="ANY" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" onAction="#handleSwitchKey" text="Switch Key Control">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="F7" control="ANY" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+        </Menu>
+    </MenuBar>
+    <Label fx:id="moveText" text="Move:">
+        <GridPane.margin>
+            <Insets left="400.0"/>
+        </GridPane.margin>
+    </Label>
+    <Label fx:id="timeText" text="Time:">
+        <GridPane.margin>
+            <Insets left="250.0"/>
+        </GridPane.margin>
+    </Label>
+    <GridPane fx:id="gameGrid" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+              minWidth="-Infinity" GridPane.rowIndex="1">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="0"/>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="0"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="0" vgrow="SOMETIMES"/>
+        </rowConstraints>
+    </GridPane>
+</GridPane>

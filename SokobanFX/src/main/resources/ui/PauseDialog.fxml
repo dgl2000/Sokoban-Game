@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<DialogPane xmlns:fx="http://javafx.com/fxml/1" headerText="Pause" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0"
+            style="-fx-background-color: RGB(250,250,248);" xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.ae2dms.sokobanfx.controller.PauseDialogController">
+    <header>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0">
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="22.0" pickOnBounds="true"
+                       preserveRatio="true">
+                <Image url="@../StartPage.jpg"/>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="87.0" layoutY="165.0" prefHeight="27.0" prefWidth="225.0"
+                   style="-fx-background-color: #8fbc84;" text="[ Close the Dialog to Continue ! ]"
+                   textFill="WHITE">
+                <font>
+                    <Font name="Arial Bold" size="12.0"/>
+                </font>
+                <effect>
+                    <DropShadow color="#1f684b"/>
+                </effect>
+            </Label>
+        </AnchorPane>
+    </header>
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="250.0">
+            <Label alignment="CENTER" layoutX="63.0" layoutY="98.0" prefHeight="39.0" prefWidth="85.0"
+                   style="-fx-background-color: #358EB4;" text="T I M E" textAlignment="CENTER" textFill="WHITE">
+                <font>
+                    <Font name="Arial Bold" size="12.0"/>
+                </font>
+                <effect>
+                    <DropShadow blurType="GAUSSIAN" color="#2290df" height="14.5" radius="6.875" width="15.0"/>
+                </effect>
+            </Label>
+            <Text fx:id="timeText" layoutX="169.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                  textAlignment="CENTER" wrappingWidth="200.240234375">
+                <font>
+                    <Font name="Arial Bold" size="12.0"/>
+                </font>
+            </Text>
+            <Text fx:id="moveText" layoutX="166.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                  textAlignment="CENTER" wrappingWidth="206.24017333984375">
+                <font>
+                    <Font name="Arial Bold" size="12.0"/>
+                </font>
+            </Text>
+            <Label alignment="CENTER" layoutX="63.0" layoutY="42.0" prefHeight="39.0" prefWidth="85.0"
+                   style="-fx-background-color: #358EB4;" text="M O V E" textAlignment="CENTER" textFill="WHITE">
+                <font>
+                    <Font name="Arial Bold" size="12.0"/>
+                </font>
+                <effect>
+                    <DropShadow blurType="GAUSSIAN" color="#2290df" height="14.75" radius="6.9375" width="15.0"/>
+                </effect>
+            </Label>
+        </AnchorPane>
+    </content>
+</DialogPane>

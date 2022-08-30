@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="450.0" prefWidth="400.0"
+            style="-fx-background-color: RGB(250,250,248);" xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.ae2dms.sokobanfx.controller.ModeChooseController">
+    <Button layoutX="60.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleClassicMode" prefHeight="40.0"
+            prefWidth="117.0" style="-fx-background-color: #358EB4;" text="CLASSIC" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="14.0"/>
+        </font>
+        <effect>
+            <DropShadow blurType="GAUSSIAN" color="#0a314f" height="13.16" radius="6.7425" width="15.81"/>
+        </effect>
+    </Button>
+    <Button layoutX="226.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleChallengeMode"
+            prefHeight="40.0" prefWidth="117.0" style="-fx-background-color: #358EB4;" text="CHALLENGE"
+            textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="14.0"/>
+        </font>
+        <effect>
+            <DropShadow blurType="GAUSSIAN" color="#0a314f" height="13.16" radius="6.7425" width="15.81"/>
+        </effect>
+    </Button>
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="102.0" layoutY="42.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../StartPage.jpg"/>
+    </ImageView>
+    <Label alignment="CENTER" layoutX="52.0" layoutY="175.0" prefHeight="22.0" prefWidth="295.0"
+           style="-fx-background-color: #8fbc84;" text="MODE CHOOSE" textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+        <effect>
+            <DropShadow blurType="GAUSSIAN" color="#0f642f" height="10.5" radius="6.077500000000001" width="15.81"/>
+        </effect>
+    </Label>
+    <Label layoutX="67.0" layoutY="247.0" text="* In challenge mode, time and move are limited.">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Label>
+</AnchorPane>
